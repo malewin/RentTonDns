@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON DNS Domains</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- Подключаем CSS стили -->
+</head>
+
+<body>
+    <div id="domain-data">
+        <h1>TON DNS Domains</h1>
+        <table id="domain-table">
+            <thead>
+                <tr>
+                    <th>Domain Name</th>
+                    <th>Expiration Date</th>
+                </tr>
+            </thead>
+            <tbody id="domain-table-body">
+                <!-- Здесь будут отображаться данные о доменах -->
+            </tbody>
+        </table>
+        <p id="domtotal"></p>
+        <button id="send-transaction">Send Transaction</button>
+        <p id="connect-your-wlt"></p>
+        <p id="img-loading">Loading...</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключаем jQuery -->
+    <script src="tonconnect.js"></script>
+    <!-- Подключаем скрипт для работы с данными -->
+</body>
+
+</html>

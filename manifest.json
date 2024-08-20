@@ -1,0 +1,27 @@
+{
+    "name": "RentDomain",
+    "description": "Domain rental service from author.ton",
+    "url": "https://author.ton",
+    "icons": [{
+        "src": "https://my-awesome-dapp.com/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "short_name": "RentDomain",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "scope": "/",
+    "version": "1.0.0",
+    "permissions": [
+        "connect",
+        "sign",
+        "send"
+    ],
+    "supported_networks": [{
+        "name": "TON",
+        "chain_id": "ton",
+        "rpc_url": "https://toncenter.com/api/v2/jsonRPC"
+    }]
+}

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(50, 161, 50);
+    // -webkit-text-stroke-color: white;
+    // -webkit-text-stroke-width: 0.2px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.background_block {
+    background-image: url(./img/book_shkaf2.jpg);
+    background-size: cover;
+    opacity: 75%;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    position: fixed;
+}
+
+.brand_logo_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .author_logo {
+        width: 300px;
+    }
+    .dom_col {
+        width: 300px;
+    }
+}
+
+.block_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    transition: transform 0.3s;
+    &_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        &_input {
+            height: 50px;
+            width: 220px;
+            border-radius: 10px;
+            /* justify-content: end; */
+            text-align: center;
+            font-size: 20px;
+        }
+        &_input[type='search'] {
+            font-size: 26px;
+            font-family: "Averia Sans Libre", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+        &_btn {
+            height: 50px;
+            width: 85px;
+            border-radius: 10px;
+            font-size: 26px;
+            font-family: "Averia Sans Libre", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            background-color: black;
+            color: white;
+            border-color: sandybrown;
+        }
+        &_btn:hover {
+            background-color: green;
+        }
+        &_btn:active {
+            transform: scale(1.05);
+            color: black;
+        }
+    }
+}
+
+.block_main_pos {
+    width: 100vw;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+// .background_opacity {
+//     width: 320px;
+//     height: 1000px;
+//     display: flex;
+//     position: absolute;
+//     justify-content: center;
+//     background-color: black;
+//     opacity: 70%;
+// }
+.block_lists {
+    width: 320px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    .block_info {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Averia Sans Libre", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 22px;
+        text-align: left;
+    }
+    .block_info:hover {
+        color: green;
+    }
+    .block_info:focus {
+        color: green;
+    }
+    .subblock_info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+    .block_category {
+        font-family: "Averia Sans Libre", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        box-sizing: border-box;
+        text-align: left;
+        padding-left: 10px;
+        border: 4px burlywood solid;
+    }
+    .subblock1 {
+        font-family: "Averia Sans Libre", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        border-top: 2px burlywood solid;
+        // text-align: center;
+    }
+    .subblock1:hover {
+        color: green;
+    }
+    .subblock1:focus {
+        color: green;
+    }
+    .list0 {
+        display: block;
+        width: 285px;
+    }
+    .list1 {
+        display: block;
+        width: 285px;
+    }
+    .list2 {
+        display: block;
+        width: 285px;
+    }
+    .list3 {
+        display: block;
+        width: 285px;
+    }
+    .list4 {
+        display: block;
+        width: 285px;
+    }
+    .list5 {
+        display: block;
+        width: 285px;
+    }
+    .list6 {
+        display: block;
+        width: 285px;
+    }
+    ul {
+        height: 450px;
+        overflow: scroll;
+        border: 2px burlywood solid;
+        font-size: 16px;
+        padding-inline-start: 5px;
+        margin-bottom: 10px;
+        text-align: left;
+        text-wrap: nowrap;
+        font-style: normal;
+    }
+    .element_for_search {
+        border-bottom: 1px burlywood solid;
+    }
+}
+
+.highlight {
+    background-color: green;
+}
+
+.colorDesc {
+    color: yellow;
+    font-weight: 100;
+}

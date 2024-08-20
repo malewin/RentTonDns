@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(50, 161, 50);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background_block {
+  background-image: url(./img/book_shkaf2.jpg);
+  background-size: cover;
+  opacity: 75%;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  position: fixed;
+}
+
+.brand_logo_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.brand_logo_block .author_logo {
+  width: 300px;
+}
+.brand_logo_block .dom_col {
+  width: 300px;
+}
+
+.block_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  transition: transform 0.3s;
+}
+.block_search_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.block_search_form_input {
+  height: 50px;
+  width: 220px;
+  border-radius: 10px;
+  /* justify-content: end; */
+  text-align: center;
+  font-size: 20px;
+}
+.block_search_form_input[type=search] {
+  font-size: 26px;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.block_search_form_btn {
+  height: 50px;
+  width: 85px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  border-color: sandybrown;
+}
+.block_search_form_btn:hover {
+  background-color: green;
+}
+.block_search_form_btn:active {
+  transform: scale(1.05);
+  color: black;
+}
+
+.block_main_pos {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.block_lists {
+  width: 320px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  position: absolute;
+  justify-content: center;
+}
+.block_lists .block_info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  text-align: left;
+}
+.block_lists .block_info:hover {
+  color: green;
+}
+.block_lists .block_info:focus {
+  color: green;
+}
+.block_lists .subblock_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.block_lists .block_category {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 10px;
+  border: 4px burlywood solid;
+}
+.block_lists .subblock1 {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  border-top: 2px burlywood solid;
+}
+.block_lists .subblock1:hover {
+  color: green;
+}
+.block_lists .subblock1:focus {
+  color: green;
+}
+.block_lists .list0 {
+  display: block;
+  width: 285px;
+}
+.block_lists .list1 {
+  display: block;
+  width: 285px;
+}
+.block_lists .list2 {
+  display: block;
+  width: 285px;
+}
+.block_lists .list3 {
+  display: block;
+  width: 285px;
+}
+.block_lists .list4 {
+  display: block;
+  width: 285px;
+}
+.block_lists .list5 {
+  display: block;
+  width: 285px;
+}
+.block_lists .list6 {
+  display: block;
+  width: 285px;
+}
+.block_lists ul {
+  height: 450px;
+  overflow: scroll;
+  border: 2px burlywood solid;
+  font-size: 16px;
+  padding-inline-start: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  text-wrap: nowrap;
+  font-style: normal;
+}
+.block_lists .element_for_search {
+  border-bottom: 1px burlywood solid;
+}
+
+.highlight {
+  background-color: green;
+}
+
+.colorDesc {
+  color: yellow;
+  font-weight: 100;
+}/*# sourceMappingURL=style_bookshelf.css.map */

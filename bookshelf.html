@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Choose the Domain</title>
+    <link rel="stylesheet" href="style_bookshelf.css">
+</head>
+
+<body>
+    <div class="background_block"></div>
+
+    <a href="#" class="brand_logo_block">
+        <img src="./img/author_logo_brown.png" alt="" class="author_logo">
+        <img src="./img/domain-collection_brown.png" alt="" class="dom_col">
+    </a>
+
+    <div class="block_search">
+        <form class="block_search_form">
+            <!-- <input type="text" id="text-to-find" value="" placeholder="Enter domain">
+        <input type="button" onclick="FindOnPage('text-to-find'); return false;" value="Search" /> -->
+            <!-- <input id="input_search" class="block_search_form_input" type="search" placeholder="Enter domain" minlength="4" maxlength="256">
+            <button onclick="searching()" class="block_search_form_btn" type="submit">Search</button> -->
+            <input type="text" id="text-to-find" value="" placeholder="Enter Domain" class="block_search_form_input" minlength="3" maxlength="127">
+            <input type="button" class="block_search_form_btn" onclick="FindOnPage('text-to-find'); return false;" value="Search" />
+        </form>
+    </div>
+    <main class="block_main_pos">
+        <!-- <div class="background_opacity"></div> -->
+        <div class="block_lists">
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">ALL DOMAINS </span>
+                    <p class="count_amount" id="count_amount_list0"></p>
+                </summary>
+                <p class="colorDesc" id="totalPrice"></p>
+                <ul class="list0" id="list0">
+                </ul>
+            </details>
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">Professions</span>
+                    <p class="count_amount" id="count_amount_list1"></p>
+                </summary>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ALL</span>
+                    </summary>
+                    <ul class="list1" id="list1">
+                    </ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ART & MEDIA</span>
+                        <p class="subcount_amount" id="subcount_amount_list1_1"></p>
+                    </summary>
+                    <ul class="list1" id="list1_1">
+                    </ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">IT</span>
+                        <p class="subcount_amount" id="subcount_amount_list1_2"></p>
+                    </summary>
+                    <ul class="list1" id="list1_2">
+                    </ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">TRADITIONAL</span>
+                        <p class="subcount_amount" id="subcount_amount_list1_3"></p>
+                    </summary>
+                    <ul class="list1" id="list1_3">
+                    </ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">MEDICINE</span>
+                        <p class="subcount_amount" id="subcount_amount_list1_4"></p>
+                    </summary>
+                    <ul class="list1" id="list1_4">
+                    </ul>
+                </details>
+            </details>
+
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">Gaming</span>
+                    <p class="count_amount" id="count_amount_list3"></p>
+                </summary>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ALL</span>
+                    </summary>
+                    <ul class="list3" id="list3">
+                    </ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">WOW CLASSES</span>
+                        <p class="subcount_amount" id="subcount_amount_list3_1"></p>
+                    </summary>
+                    <ul class="list3" id="list3_1"></ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ROLES</span>
+                        <p class="subcount_amount" id="subcount_amount_list3_2"></p>
+                    </summary>
+                    <ul class="list3" id="list3_2"></ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">DOTA2 CHARACTERS</span>
+                        <p class="subcount_amount" id="subcount_amount_list3_3"></p>
+                    </summary>
+                    <ul class="list3" id="list3_3"></ul>
+                </details>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">GAMES</span>
+                        <p class="subcount_amount" id="subcount_amount_list3_4"></p>
+                    </summary>
+                    <ul class="list3" id="list3_4"></ul>
+                </details>
+            </details>
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">Utility</span>
+                    <p class="count_amount" id="count_amount_list2"></p>
+                </summary>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ALL</span>
+                    </summary>
+                    <ul class="list2" id="list2">
+                    </ul>
+                </details>
+            </details>
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">Services</span>
+                    <p class="count_amount" id="count_amount_list4"></p>
+                </summary>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ALL</span>
+                    </summary>
+                    <ul class="list4" id="list4">
+                    </ul>
+                </details>
+            </details>
+
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">Others</span>
+                    <p class="count_amount" id="count_amount_list5"></p>
+                </summary>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ALL</span>
+                    </summary>
+                    <ul class="list5" id="list5">
+                    </ul>
+                </details>
+            </details>
+
+            <details class="block_category">
+                <summary class="block_info">
+                    <span class="block_heading">Punycode</span>
+                    <p class="count_amount" id="count_amount_list6"></p>
+                </summary>
+                <details class="subblock1">
+                    <summary class="subblock_info">
+                        <span class="subblock_heading">ALL</span>
+                    </summary>
+                    <ul class="list6" id="list6">
+                    </ul>
+                </details>
+            </details>
+
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

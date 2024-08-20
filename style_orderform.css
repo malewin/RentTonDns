@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background_main {
+  background-image: url(./img/resepshn2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.main_block_pos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+}
+.main_block_pos .domain_info_block {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 310px;
+  height: 155px;
+  background-color: black;
+  border: 2px white solid;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.main_block_pos .domain_info_block .img_domain_block {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.main_block_pos .domain_info_block .img_domain_logo {
+  width: 130px;
+}
+.main_block_pos .domain_info_block .status_block {
+  grid-row: 1/3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+}
+.main_block_pos .domain_info_block .status_txt {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+}
+.main_block_pos .domain_info_block .price_domain_block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+}
+.main_block_pos .domain_info_block .price_domain_txt {
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  text-wrap: wrap;
+  align-items: flex-end;
+  gap: 5px;
+}
+.main_block_pos .domain_info_block .rentalprice_domain_block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+}
+.main_block_pos .domain_info_block .rental_price_domain_txt {
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  text-wrap: wrap;
+  align-items: flex-end;
+  gap: 5px;
+}
+.main_block_pos .domain_info_block .colorDesc {
+  color: yellow;
+}
+.main_block_pos .domain_info_block .toncoin_logo {
+  display: flex;
+  align-items: flex-end;
+}
+.main_block_pos .domain_order_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_block_pos .hiddenBlockByBtn {
+  display: none;
+}
+.main_block_pos .choice_order_block {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.main_block_pos .choice_order_block .button_block_rent {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_block_pos .choice_order_block .button_block_rent .btn_rent {
+  height: 40px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border: 2px white solid;
+  border-radius: 25px;
+  transition: transform 0.3s;
+}
+.main_block_pos .choice_order_block .button_block_rent .btn_rent:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+.main_block_pos .choice_order_block .button_block_rent .btn_rent:focus {
+  background-color: green;
+  color: black;
+  border-color: black;
+  transform: scale(1.1);
+}
+.main_block_pos .choice_order_block .button_block_offer {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_block_pos .choice_order_block .button_block_offer .btn_offer {
+  height: 40px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border: 2px white solid;
+  border-radius: 25px;
+  transition: transform 0.3s;
+}
+.main_block_pos .choice_order_block .button_block_offer .btn_offer:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+.main_block_pos .choice_order_block .button_block_offer .btn_offer:focus {
+  background-color: green;
+  color: black;
+  border-color: black;
+  transform: scale(1.1);
+}
+.main_block_pos .disclamer_rent {
+  margin-top: 10px;
+  width: 300px;
+  color: yellow;
+  text-align: left;
+}
+.main_block_pos .disclamer_rent_head {
+  text-align: center;
+}
+.main_block_pos .disclamer_rent_txt {
+  display: block;
+  width: 280px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+.main_block_pos .form_post_block {
+  margin-top: 20px;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 310px;
+  background-color: black;
+  border: 2px white solid;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main_block_pos .hidden {
+  display: none;
+}
+.main_block_pos .label_pos {
+  display: flex;
+  gap: 5px;
+  width: 80px;
+  justify-content: flex-start;
+}
+.main_block_pos .form_question_block {
+  display: block;
+  width: 230px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main_block_pos .form_button {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main_block_pos .form_button2 {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main_block_pos .order_summary_block {
+  margin-top: 20px;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 310px;
+  background-color: black;
+  border: 2px white solid;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main_block_pos .order_summary_block .sum_output_box {
+  width: 280px;
+  border: 1px white solid;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main_block_pos .order_summary_block .output_info_line {
+  padding: 5px;
+  width: 270px;
+  overflow-wrap: break-word;
+}
+.main_block_pos .order_summary_block .form_disclamer_order {
+  color: red;
+  width: 280px;
+}
+.main_block_pos .offer_block_buy {
+  margin-top: 20px;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 310px;
+  background-color: black;
+  border: 2px white solid;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gg_logo {
+  width: 120px;
+  height: 28px;
+}
+
+.multi_button2 {
+  transition: transform 0.2s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.multi_button2:hover {
+  transform: scale(1.05);
+}
+
+.go_to_seller1 {
+  width: 180px;
+  height: 40px;
+  background-color: #201e1e;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 5px;
+}
+
+.go_to_seller1:hover {
+  color: #201e1e;
+  background-color: #FFFFFF;
+  border-color: #201e1e;
+}
+
+.go_to_seller1:focus {
+  background-color: green;
+  color: black;
+  border-color: black;
+  transform: scale(1.1);
+}/*# sourceMappingURL=style_orderform.css.map */

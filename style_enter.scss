@@ -1,0 +1,121 @@
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:320px) {
+    a {
+        text-decoration: none;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .background_block {
+        background-image: url(./img/enter_door4.png);
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+    .door_knocker_pos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        .href_knocker {
+            display: block;
+            height: 100px;
+            z-index: 1;
+        }
+        &_img {
+            width: 100px;
+            z-index: 1;
+            margin-top: -150px;
+            transition: transform 0.3s;
+            animation: pulsate-bck 1s ease-in-out infinite both;
+        }
+        &_img:hover {
+            transform: scale(1.2);
+            animation: none;
+        }
+    }
+    .table_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        &_pos {
+            margin-top: -70px;
+        }
+        &_img {
+            width: 230px;
+        }
+    }
+    .logo_pos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        .author_logo {
+            width: 220px;
+            position: absolute;
+        }
+        .dom_col {
+            width: 220px;
+            position: absolute;
+            padding-top: 100px;
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .background_block_pos {
+        padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px);
+    }
+    .background_block {
+        background-image: url(./img/enter_door4.png);
+        background-size: cover;
+        background-position: center center;
+        width: 800px;
+        height: 100%;
+        position: fixed;
+    }
+}
