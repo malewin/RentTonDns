@@ -1,9 +1,9 @@
 {
     "name": "RentDomain",
     "description": "Domain rental service from author.ton",
-    "url": "https://author.ton",
+    "url": "https://github.com/malewin/RentTonDns",
     "icons": [{
-        "src": "https://my-awesome-dapp.com/icon.png",
+        "src": "https://github.com/malewin/RentTonDns/blob/main/logo_app.png",
         "sizes": "192x192",
         "type": "image/png"
     }],
